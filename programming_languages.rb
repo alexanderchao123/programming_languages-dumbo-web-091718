@@ -3,7 +3,6 @@ def reformat_languages(languages)
   reformatted = {}
   languages.each do |style, langs|
     langs.each do |language, type|
-      reformatted[language] = {}
       # reformatted[language] = type
       # if reformatted[language].has_key?(:style)
       #   reformatted[language][:style] << style
