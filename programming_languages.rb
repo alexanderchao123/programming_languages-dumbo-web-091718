@@ -7,6 +7,7 @@ def reformat_languages(languages)
       # if reformatted[language] has the key :style
       # push in the style into Array
       # else create the style key and assign an array value
+      # and push in the style
       reformatted[language][:style] = []
     end
   end
