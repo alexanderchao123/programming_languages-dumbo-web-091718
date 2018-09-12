@@ -42,7 +42,11 @@ languages = {
     },
     :scala => {
       :type => "compiled"
+    },
+    :javascript => {
+      :type => "interpreted"
     }
+
   }
 }
 
