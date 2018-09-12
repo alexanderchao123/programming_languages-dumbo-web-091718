@@ -9,3 +9,5 @@ def reformat_languages(languages)
 
   return reformatted
 end
+
+p reformat_languages(languages)
