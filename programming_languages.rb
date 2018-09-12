@@ -13,6 +13,7 @@ def reformat_languages(languages)
       else
         reformatted[language][:style] = [style]
       end
+      binding.pry
     end
   end
   return reformatted
