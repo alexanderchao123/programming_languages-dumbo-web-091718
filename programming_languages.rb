@@ -4,7 +4,7 @@ def reformat_languages(languages)
   languages.each do |style, languages|
     languages.each do |language, type|
       reformatted[language] = type
-      (reformatted[language][:style] = []) if !reformatted[language][:style].exist?
+      (reformatted[language][:style] = []) if !reformatted[language][:style].has_key?
       reformatted[language][:style] << style
     end
   end
