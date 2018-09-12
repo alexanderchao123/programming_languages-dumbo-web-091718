@@ -7,9 +7,9 @@ def reformat_languages(languages)
       if reformatted[language].has_key?(:style)
         reformatted[language][:style] << style
       else
+        # binding.pry
         reformatted[language][:style] = [style]
       end
-      # binding.pry
     end
   end
   return reformatted
