@@ -1,7 +1,6 @@
 require 'pry'
 def reformat_languages(languages)
   reformatted = {}
-
   languages.each do |style, languages|
     languages.each do |language, type|
       reformatted[language] = type
@@ -14,7 +13,6 @@ def reformat_languages(languages)
       # end
     end
   end
-
   return reformatted
 end
 
