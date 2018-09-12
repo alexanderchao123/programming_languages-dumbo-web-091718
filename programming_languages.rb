@@ -4,16 +4,12 @@ def reformat_languages(languages)
   languages.each do |style, languages|
     languages.each do |language, type|
       reformatted[language] = type
-      # if reformatted[language] has the key :style
-      # push in the style into Array
-      # else create the style key and assign an array value
-      # and push in the style
       if reformatted[language].has_key?(:style)
         reformatted[language][:style] << style
       else
         reformatted[language][:style] = [style]
       end
-      binding.pry
+      # binding.pry
     end
   end
   return reformatted
