@@ -11,8 +11,7 @@ def reformat_languages(languages)
       if
         reformatted[language][:style] << style
       else
-        reformatted[language][:style] = []
-        reformatted[language][:style] << style
+        reformatted[language][:style] = [style]
       end
     end
   end
