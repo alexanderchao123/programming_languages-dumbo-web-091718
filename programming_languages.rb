@@ -4,13 +4,6 @@ def reformat_languages(languages)
   languages.each do |style, languages|
     languages.each do |language, type|
       reformatted[language] = type
-      # binding.pry
-      # if !reformatted[language].has_key?(:style)
-      #   reformatted[language][:style] = []
-      #   reformatted[language][:style] << style
-      # else
-      #   reformatted[language][:style] << style
-      # end
     end
   end
   return reformatted
