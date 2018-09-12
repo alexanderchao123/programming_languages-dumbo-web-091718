@@ -1,13 +1,13 @@
 require 'pry'
 def reformat_languages(languages)
   reformatted = {}
-  languages.each do |style, languages|
-    languages.each do |language, type|
+  languages.each do |style, langs|
+    langs.each do |language, type|
       reformatted[language] = type
       if reformatted[language].has_key?(:style)
         reformatted[language][:style] << style
       else
-        # binding.pry
+        binding.pry
         reformatted[language][:style] = [style]
       end
     end
